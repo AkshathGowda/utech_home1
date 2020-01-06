@@ -1,0 +1,41 @@
+@import '~bourbon-neat/app/assets/stylesheets/neat-helpers';
+
+// Neat Overrides
+//$column: 90px;
+//$gutter: 30px;
+//$grid-columns: 12;
+//$max-width: em($screen-lg);
+//$visual-grid: true;
+
+// Neat Breakpoints
+
+$screen-xxs: new-breakpoint(max-width $screen-xxs-max $grid-columns);
+$screen-xs: new-breakpoint(max-width $screen-xs-max $grid-columns);
+$screen-sm: new-breakpoint(max-width $screen-sm-max $grid-columns);
+$screen-md: new-breakpoint(max-width $screen-md-max $grid-columns);
+$screen-lg: new-breakpoint(min-width $screen-lg-min $grid-columns);
+$screen-xl: new-breakpoint(min-width $screen-xl-min $grid-columns);
+
+$screen-xxs-only: new-breakpoint(
+    min-width $screen-xxs-min max-width $screen-xxs-max $grid-columns
+);
+$screen-xs-only: new-breakpoint(
+    min-width $screen-xs-min max-width $screen-xs-max $grid-columns
+);
+$screen-sm-only: new-breakpoint(
+    min-width $screen-sm-min max-width $screen-sm-max $grid-columns
+);
+$screen-md-only: new-breakpoint(
+    min-width $screen-md-min max-width $screen-md-max $grid-columns
+);
+$screen-lg-only: new-breakpoint(
+    min-width $screen-lg-min max-width $screen-lg-max $grid-columns
+);
+
+// DT-Team Neat Breakpoints
+$min-xxs: new-breakpoint(min-width $screen-xxs-min $grid-columns);
+$min-xs: new-breakpoint(min-width $screen-xs-min $grid-columns);
+$min-sm: new-breakpoint(min-width $screen-sm-min $grid-columns);
+$min-md: new-breakpoint(min-width $screen-md-min $grid-columns);
+$min-lg: new-breakpoint(min-width $screen-lg-min $grid-columns);
+$min-xl: new-breakpoint(min-width $screen-xl-min $grid-columns);
